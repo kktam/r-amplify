@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "ramplify-20181115040451-authRole",
+            "UnauthRoleArn": "arn:aws:iam::186001529570:role/ramplify-20181115040451-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::186001529570:role/ramplify-20181115040451-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "ramplify-20181115040451-deployment",
+            "UnauthRoleName": "ramplify-20181115040451-unauthRole",
+            "StackName": "ramplify-20181115040451",
+            "StackId": "arn:aws:cloudformation:us-west-2:186001529570:stack/ramplify-20181115040451/9a147410-e88b-11e8-8460-503ac9316861"
+        }
+    }
+}
