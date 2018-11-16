@@ -1,14 +1,36 @@
 {
-    "providers": {
-        "awscloudformation": {
-            "AuthRoleName": "ramplify-20181115040451-authRole",
-            "UnauthRoleArn": "arn:aws:iam::186001529570:role/ramplify-20181115040451-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::186001529570:role/ramplify-20181115040451-authRole",
-            "Region": "us-west-2",
-            "DeploymentBucketName": "ramplify-20181115040451-deployment",
-            "UnauthRoleName": "ramplify-20181115040451-unauthRole",
-            "StackName": "ramplify-20181115040451",
-            "StackId": "arn:aws:cloudformation:us-west-2:186001529570:stack/ramplify-20181115040451/9a147410-e88b-11e8-8460-503ac9316861"
-        }
-    }
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "ramplify-20181115040451-authRole",
+			"UnauthRoleArn": "arn:aws:iam::186001529570:role/ramplify-20181115040451-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::186001529570:role/ramplify-20181115040451-authRole",
+			"Region": "us-west-2",
+			"DeploymentBucketName": "ramplify-20181115040451-deployment",
+			"UnauthRoleName": "ramplify-20181115040451-unauthRole",
+			"StackName": "ramplify-20181115040451",
+			"StackId": "arn:aws:cloudformation:us-west-2:186001529570:stack/ramplify-20181115040451/9a147410-e88b-11e8-8460-503ac9316861"
+		}
+	},
+	"auth": {
+		"ramplify": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/ramplify-20181115040451-deployment/amplify-cfn-templates/auth/ramplify-cloudformation-template.yml",
+				"logicalId": "authramplify"
+			},
+			"lastPushTimeStamp": "2018-11-16T05:00:24.331Z",
+			"output": {
+				"CreatedSNSRole": "arn:aws:iam::186001529570:role/ramplify_sns-role",
+				"AppClientSecret": "fmh8idebdi2knhkg3fraq4toeeb9q7ep80p79cc989bncgrknsa",
+				"UserPoolId": "us-west-2_7csL9jg4h",
+				"AppClientIDWeb": "4i1i5clofgbs2nvmjvglfh53ru",
+				"AppClientID": "3mslicn5qu9mb5jrb2tp608jr3",
+				"IdentityPoolId": "us-west-2:0781718c-dcf1-40bd-be57-374a342f192b",
+				"IdentityPoolName": "ramplify",
+				"UserPoolName": "ramplify"
+			},
+			"lastPushDirHash": "oUxdzbXtQgpT0ifkRKdUnC6qUMc="
+		}
+	}
 }
